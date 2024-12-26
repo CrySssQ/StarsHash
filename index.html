@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarsHash</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">  
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Stars   Hash...</h1>
+        <div class="stats">
+            <p><span class="text">Stars Mined:</span> <span class="stars" id="stars">0 </span>$STRS</p>
+            <p><span class="text">Energy Used:</span> <span class="energy" id="energy">0</span> kWh</p>
+            <p><span class="text">Temperature:</span> <span id="temperature" class="temperature">30</span>°C</p>
+            <p><span class="text">Battery:</span> <span id="battery" class="battery">100</span>%</p>
+            <p><span class="text">Hash Rate:</span> <span class="hashrate" id="hashrate">0</span> H/s</p>
+        </div>
+
+        <div class="controls">
+            <button class="button start-mining" id="start-mining" onclick="startMining()">Start Mining</button>
+            <button class="button cool-down" id="cool-down" onclick="coolDown()">Cool Down</button>
+        </div>
+
+        <div><img class="mini-games" src="/img/mini-games.svg" alt="">
+            <button class="mini-button">MINI GAMES</button>
+        
+        </div>
+        
+        <nav>
+            <button class="nav-button" onclick="switchTab('settings')">Settings</button>
+            <button class="nav-button active" onclick="switchTab('mining')">Mining</button>
+            <button class="nav-button" onclick="switchTab('boost')">Boost</button>
+            <button class="nav-button" onclick="switchTab('friends')">Friends</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
